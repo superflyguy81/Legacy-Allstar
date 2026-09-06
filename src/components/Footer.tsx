@@ -12,14 +12,28 @@ function Footer() {
           <p className="footer-motto">Building Leaders. Creating Legacy.</p>
         </div>
 
-        <nav className="footer-nav">
-          <Link to="/about">About Us</Link>
-          <Link to="/mission">Mission & Vision</Link>
-          <Link to="/programs">Programs & Impact</Link>
-          <Link to="/get-involved">Get Involved</Link>
-          <Link to="/donate">Donate</Link>
-          <Link to="/contact">Contact Us</Link>
-        </nav>
+        <div className="footer-columns">
+          <nav className="footer-nav">
+            <span className="footer-heading">Organization</span>
+            <Link to="/about">About</Link>
+            <Link to="/programs">Programs</Link>
+            <Link to="/donate">Donate</Link>
+            <Link to="/contact">Contact</Link>
+          </nav>
+          <nav className="footer-nav">
+            <span className="footer-heading">For Families</span>
+            <Link to="/families/enroll">Enroll a Student</Link>
+            <Link to="/families/parent-information">Parent Information</Link>
+            <Link to="/families/faqs">FAQs</Link>
+            <Link to="/families/youth-safety">Youth Safety</Link>
+          </nav>
+          <nav className="footer-nav">
+            <span className="footer-heading">Get Involved</span>
+            <Link to="/get-involved/mentor">Become a Mentor</Link>
+            <Link to="/get-involved/volunteer">Volunteer</Link>
+            <Link to="/get-involved/partner">Partner With Us</Link>
+          </nav>
+        </div>
 
         <div className="footer-contact">
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>

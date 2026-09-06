@@ -6,9 +6,9 @@ function About() {
   return (
     <>
       <PageHero
-        eyebrow="About Us"
+        eyebrow="About"
         title="About Legacy All-Stars"
-        subtitle="Who we are, what we do, and our commitment to youth."
+        subtitle="Who we are, why we exist, and the people guiding the work."
         image={aboutHero}
         imageAlt="A Legacy All-Stars mentor talking with a student"
       />
@@ -39,7 +39,42 @@ function About() {
           partners to inspire the next generation to leave a lasting legacy of excellence,
           integrity, and service.
         </p>
+      </section>
 
+      <section className="section section-narrow" id="mission">
+        <div className="mv-block">
+          <h2>Our Mission</h2>
+          <p>
+            Legacy All-Stars inspires, mentors, and equips young people to confidently
+            navigate life's transitions by fostering academic achievement, personal growth,
+            leadership development, and life skills that prepare them for success in
+            education, career, and life.
+          </p>
+        </div>
+
+        <div className="mv-block">
+          <h2>Our Vision</h2>
+          <p>
+            A future where every young person has the confidence, character, and
+            opportunities to reach their full potential, lead with purpose, and create
+            lasting positive change in their communities.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-narrow alt-bg">
+        <span className="eyebrow">Why We Exist</span>
+        <h2>Our Why</h2>
+        <p>
+          Many students face real challenges as they navigate middle school, high school,
+          peer pressure, social media influences, academic expectations, and future career
+          decisions. Legacy All-Stars exists to help young people develop the skills,
+          mindset, and character needed to thrive.
+        </p>
+        <p>
+          Potential is everywhere, but opportunity is not. Legacy All-Stars closes that gap
+          &mdash; one student, one mentor, one relationship at a time.
+        </p>
         <p className="motto-line">Our Motto: Building Leaders. Creating Legacy.</p>
       </section>
 

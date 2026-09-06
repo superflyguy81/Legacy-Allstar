@@ -1,42 +1,46 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import involvedHero from '../assets/stock/involved-hero.jpg'
-import { otherWaysToSupport, CONTACT_EMAIL } from '../data/content'
+import { waysToHelp } from '../data/content'
+
+const INVOLVEMENT_LINKS = [
+  { to: '/get-involved/mentor', title: 'Become a Mentor', description: "Someone's future could be different because you showed up." },
+  { to: '/get-involved/volunteer', title: 'Volunteer', description: 'Share your time and talents at events, workshops, and experiences.' },
+  { to: '/get-involved/partner', title: 'Partner With Us', description: 'Businesses, churches, schools, and organizations all have a place here.' },
+]
 
 function GetInvolved() {
   return (
     <>
       <PageHero
         eyebrow="Get Involved"
-        title="Volunteer & Partner With Us"
+        title="There Are Many Ways to Help Build Legacy."
         subtitle="Together, we can create opportunities that inspire personal growth, leadership, and lifelong success."
         image={involvedHero}
         imageAlt="A Legacy All-Stars volunteer welcoming a student with a handshake"
       />
 
-      <section className="section section-narrow">
-        <h2>Other Ways to Support</h2>
-        <p>
-          In addition to financial contributions, you can support Legacy All-Stars in several
-          ways:
-        </p>
-        <ol className="numbered-list">
-          {otherWaysToSupport.map((item) => (
-            <li key={item}>{item}</li>
+      <section className="section">
+        <div className="link-cards link-cards-3">
+          {INVOLVEMENT_LINKS.map((link) => (
+            <Link to={link.to} className="link-card" key={link.to}>
+              <h3>{link.title}</h3>
+              <p>{link.description}</p>
+              <span className="link-card-arrow">&rarr;</span>
+            </Link>
           ))}
-        </ol>
+        </div>
       </section>
 
-      <section className="section cta-band">
-        <h2>Volunteer or Partner With Legacy All-Stars</h2>
-        <p>
-          Whether you want to volunteer, become a mentor, sponsor a program, or partner as an
-          organization, we'd love to hear from you.
-        </p>
-        <a href={`mailto:${CONTACT_EMAIL}`} className="btn btn-primary">Email Us to Get Started</a>
-        <p className="section-note-light">
-          Or visit our <Link to="/contact">Contact Us</Link> page for more ways to reach us.
-        </p>
+      <section className="section section-narrow alt-bg">
+        <h2>Every Contribution Counts</h2>
+        <ul className="ways-list">
+          {waysToHelp.map((way) => (
+            <li key={way.title}>
+              <Link to={way.to}>{way.title}</Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   )

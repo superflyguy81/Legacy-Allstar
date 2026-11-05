@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { CONTACT_EMAIL, SOCIAL_HANDLE } from '../data/content'
+import Icon from './Icon'
+import { CONTACT_EMAIL, SOCIAL_HANDLE, FACEBOOK_URL, INSTAGRAM_URL } from '../data/content'
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -38,6 +39,26 @@ function Footer() {
         <div className="footer-contact">
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
           <span>{SOCIAL_HANDLE} on Facebook &amp; Instagram</span>
+          <div className="social-links">
+            <a
+              href={FACEBOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Legacy All-Stars on Facebook"
+              className="social-link"
+            >
+              <Icon name="facebook" className="social-icon" />
+            </a>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Legacy All-Stars on Instagram"
+              className="social-link"
+            >
+              <Icon name="instagram" className="social-icon" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">

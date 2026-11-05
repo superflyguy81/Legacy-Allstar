@@ -457,6 +457,44 @@ p {
   text-decoration: none;
 }
 
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--gold-light);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.social-link:hover {
+  background: var(--gold);
+  color: var(--navy-950);
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-item .social-link {
+  background: var(--navy-50, rgba(11, 31, 59, 0.08));
+  color: var(--navy-800);
+}
+
+.contact-item .social-link:hover {
+  background: var(--gold);
+  color: var(--navy-950);
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
@@ -614,6 +652,7 @@ p {
   width: 100%;
   height: 480px;
   object-fit: cover;
+  object-position: top center;
 }
 
 @media (max-width: 860px) {
@@ -676,6 +715,7 @@ p {
   width: 100%;
   height: 340px;
   object-fit: cover;
+  object-position: top center;
 }
 
 @media (max-width: 860px) {
@@ -1483,4 +1523,51 @@ p {
 .faq p {
   margin: 0;
   padding: 0 0 20px;
+}
+/* Home hero photo — was cut at the top, now framed at 40% from top */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+/* Split sections (image + text side by side) */
+.split-image img {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center 24%;
+}
+
+/* Interior page hero photos */
+.page-hero-image img {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 29%;
+}
+
+/* Board member round photos */
+.board-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  margin: 0 auto 16px;
+  border: 3px solid var(--gold);
+}
+
+/* Mobile overrides so crops still look right on phones */
+@media (max-width: 860px) {
+  .split-image img { height: 320px; }
+  .page-hero-image img { height: 260px; }
+}
+@media (max-width: 860px) {
+  .page-hero-image img { height: 340px; object-position: center 25%; }
 }

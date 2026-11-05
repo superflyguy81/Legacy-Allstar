@@ -1,6 +1,6 @@
 import PageHero from '../components/PageHero'
 import donateHero from '../assets/stock/donate-hero.jpg'
-import { donationLevels, CONTACT_EMAIL } from '../data/content'
+import { donationLevels, CONTACT_EMAIL, DONATE_URL } from '../data/content'
 
 function Donate() {
   return (
@@ -15,13 +15,19 @@ function Donate() {
 
       <section className="section section-narrow">
         <div className="notice-card">
-          <h2>Online Giving Coming Soon</h2>
+          <h2>Give Online Now</h2>
           <p>
-            We're finishing the setup of our organization's bank account so we can accept
-            online donations securely. In the meantime, please{' '}
-            <a href={`mailto:${CONTACT_EMAIL}`}>email us</a> if you'd like to make a
-            contribution or arrange another way to give &mdash; we'll follow up with details.
+            Give safely and securely through our online donation form. Prefer another way to
+            give? <a href={`mailto:${CONTACT_EMAIL}`}>Email us</a> and we'll follow up with details.
           </p>
+          <a
+            href={DONATE_URL}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate Now
+          </a>
         </div>
       </section>
 

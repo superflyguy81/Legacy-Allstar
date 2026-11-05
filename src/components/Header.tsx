@@ -65,7 +65,9 @@ function Header() {
     <header className="site-header">
       <div className="site-header-inner">
         <NavLink to="/" className="brand">
-          <img src={logo} alt="Legacy All-Stars crest" className="brand-logo" />
+          <span className="brand-logo-frame" aria-hidden="true">
+            <img src={logo} alt="" className="brand-logo" />
+          </span>
           <span className="brand-name">Legacy All-Stars</span>
         </NavLink>
 

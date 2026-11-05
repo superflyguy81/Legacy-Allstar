@@ -175,11 +175,24 @@ p {
   color: var(--white);
 }
 
-.brand-logo {
+.brand-logo-frame {
+  position: relative;
   width: 44px;
   height: 44px;
+  flex: 0 0 44px;
+  overflow: hidden;
   border-radius: 50%;
+}
+
+.brand-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76px;
+  height: 76px;
+  max-width: none;
   object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 
 .brand-name {

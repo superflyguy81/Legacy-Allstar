@@ -10,6 +10,17 @@ import george from '../assets/board/george.jpg'
 export const CONTACT_EMAIL = 'legacyallstarsorg@gmail.com'
 export const SOCIAL_HANDLE = '@legacyallstarsorg'
 
+export const FACEBOOK_URL = 'https://www.facebook.com/share/1DBEgu4iMM/?mibextid=wwXIfr'
+export const INSTAGRAM_URL = 'https://www.instagram.com/legacyallstarsorg'
+
+export const ENROLL_FORM_URL = 'https://forms.gle/GeYdAtzhohCU6exp7'
+export const MENTOR_FORM_URL = 'https://forms.gle/AX36VAdwfsz6DcP16'
+export const VOLUNTEER_FORM_URL = 'https://forms.gle/r3fUrSrceWe43HwF8'
+export const DONATE_URL = 'https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-23465'
+
+export const REGISTRATION_FEE_NOTE =
+  'Registration includes a $20 per student fee, payable via Zelle. Find us on Zelle by searching legacyallstarsorg@gmail.com \u2014 payment details are also included in the registration form.'
+
 export const mailto = (subject: string) =>
   `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}`
 

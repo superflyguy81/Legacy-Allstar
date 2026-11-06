@@ -100,10 +100,9 @@ export interface ImpactStat {
 }
 
 export const impactStats: ImpactStat[] = [
-  { label: 'Youth enrolled', value: null },
-  { label: 'Mentors recruited', value: null },
-  { label: 'Community partners', value: null },
-  { label: 'Programs & experiences', value: null },
+  { label: 'Youth enrolled', value: '21' },
+  { label: 'Mentors recruited', value: '8' },
+  { label: 'Community partners', value: 'TBA' },
 ]
 
 export interface WayToHelp {

@@ -161,8 +161,8 @@ function Home() {
           ))}
         </div>
         <p className="section-note impact-note">
-          We're tracking our impact from day one and will share our numbers here as the
-          program grows.
+          We're tracking our impact from day one and will continue updating these numbers as
+          the program grows.
         </p>
       </section>
 

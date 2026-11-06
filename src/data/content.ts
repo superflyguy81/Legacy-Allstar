@@ -1,10 +1,10 @@
 import channel from '../assets/board/channel.jpg'
-import mkaneghay from '../assets/board/mkaneghay.jpg'
+import mkaneghay from '../assets/board/mkaneghay.jpeg'
 import kim from '../assets/board/kim.jpg'
 import farrah from '../assets/board/farrah.jpg'
 import roy from '../assets/board/roy.jpg'
 import lashawn from '../assets/board/lashawn.jpg'
-import antoine from '../assets/board/antoine.jpg'
+import antoine from '../assets/board/antoine.png'
 import george from '../assets/board/george.jpg'
 
 export const CONTACT_EMAIL = 'legacyallstarsorg@gmail.com'

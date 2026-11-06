@@ -74,16 +74,12 @@ export const experienceSteps: Step[] = [
 ]
 
 export const activities: string[] = [
-  'College Tours',
-  'Career Exploration',
-  'Financial Literacy',
-  'Leadership Workshops',
-  'Community Service',
-  'Entrepreneurship',
-  'Technology & AI',
-  'Sports & Recreation',
-  'Life Skills',
-  'Cultural Experiences',
+  'Leadership Development',
+  'Personal Growth & Goal Setting',
+  'Financial Literacy & Money Management',
+  'Real-World Life Skills',
+  'Community Service Opportunities',
+  'College & Career Exploration',
 ]
 
 export interface SafetyItem {

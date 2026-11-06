@@ -1202,6 +1202,23 @@ p {
   font-size: 0.95rem;
 }
 
+.student-gains {
+  margin-top: 48px;
+}
+
+.student-gains h3 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.student-gains h2 {
+  text-align: center;
+}
+
+.activity-grid-six {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .activity-grid-compact {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 24px;
@@ -1215,6 +1232,10 @@ p {
 @media (max-width: 900px) {
   .activity-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .activity-grid-six {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

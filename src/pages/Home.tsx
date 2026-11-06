@@ -106,11 +106,22 @@ function Home() {
           <span className="eyebrow">Activities &amp; Experiences</span>
           <h2>More Than Mentoring.</h2>
         </div>
-        <ul className="activity-grid">
+        <ul className="activity-grid activity-grid-six">
           {activities.map((activity) => (
             <li className="activity" key={activity}>{activity}</li>
           ))}
         </ul>
+        <div className="student-gains">
+          <h2>What Students Gain</h2>
+          <ul className="activity-grid activity-grid-six">
+            <li className="activity">Connect with Positive Role Models</li>
+            <li className="activity">Create Meaningful Friendships</li>
+            <li className="activity">Self-Confidence &amp; Resilience</li>
+            <li className="activity">Personal Accountability</li>
+            <li className="activity">Serve Their Community</li>
+            <li className="activity">Gain Life Skills for Success</li>
+          </ul>
+        </div>
       </section>
 
       <section className="section section-narrow safety">

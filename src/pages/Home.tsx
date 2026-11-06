@@ -3,6 +3,7 @@ import Icon from '../components/Icon'
 import homeHero from '../assets/stock/home-hero.jpg'
 import welcome from '../assets/stock/welcome.jpg'
 import {
+  CONTACT_EMAIL,
   pillars,
   experienceSteps,
   activities,
@@ -203,7 +204,10 @@ function Home() {
         </div>
         <div className="story-cta-wrap">
           <p className="story-cta">
-            Have a Legacy story to share? <Link to="/contact">We'd love to hear it.</Link>
+            Have a Legacy story to share?{' '}
+            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Share a Legacy story')}`}>
+              We’d love to hear it.
+            </a>
           </p>
         </div>
       </section>

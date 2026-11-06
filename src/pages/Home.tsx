@@ -168,13 +168,40 @@ function Home() {
 
       <section className="section alt-bg stories">
         <div className="section-header">
+          <span className="eyebrow">From Our Community</span>
           <h2>Legacy Stories</h2>
         </div>
-        <div className="story-placeholder">
-          <p>
-            As our inaugural year unfolds, this is where you'll hear from students, parents,
-            mentors, and community partners about what Legacy means to them.
-          </p>
+        <div className="story-group">
+          <h3>Parent Feedback</h3>
+          <div className="story-grid story-grid-parent">
+            <blockquote className="story-card">
+              <p>“My son did not want to leave the session and mentioned how much fun it was.”</p>
+              <cite>Legacy Parent</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div className="story-group">
+          <h3>Youth Feedback</h3>
+          <div className="story-grid">
+            <blockquote className="story-card">
+              <p>“I loved connecting with my mentor.”</p>
+              <cite>Legacy registered student</cite>
+            </blockquote>
+            <blockquote className="story-card">
+              <p>
+                “During the session on communications, I liked talking about how you should
+                talk to people and the impact your tone and body language has when delivering
+                a message.”
+              </p>
+              <cite>Legacy registered student</cite>
+            </blockquote>
+            <blockquote className="story-card">
+              <p>“I liked the energy that the mentors brought!”</p>
+              <cite>Legacy registered student</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div className="story-cta-wrap">
           <p className="story-cta">
             Have a Legacy story to share? <Link to="/contact">We'd love to hear it.</Link>
           </p>

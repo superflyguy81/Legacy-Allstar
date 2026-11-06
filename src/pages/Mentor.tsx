@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import Icon from '../components/Icon'
 import donateHero from '../assets/stock/donate-hero.jpg'
-import { safetyItems, MENTOR_MAILTO } from '../data/content'
+import { safetyItems, MENTOR_FORM_URL } from '../data/content'
 
 function Mentor() {
   return (
@@ -37,7 +37,14 @@ function Mentor() {
         <div className="notice-card">
           <h2>Ready to Show Up?</h2>
           <p>Tell us a little about yourself and we'll be in touch with next steps.</p>
-          <a href={MENTOR_MAILTO} className="btn btn-primary">Email Us to Become a Mentor</a>
+          <a
+            href={MENTOR_FORM_URL}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Become a Mentor
+          </a>
         </div>
 
         <p className="section-note">

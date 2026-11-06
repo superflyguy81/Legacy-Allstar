@@ -1,6 +1,6 @@
 import PageHero from '../components/PageHero'
 import programsHero from '../assets/stock/programs-hero.jpg'
-import { VOLUNTEER_MAILTO } from '../data/content'
+import { VOLUNTEER_FORM_URL } from '../data/content'
 
 function Volunteer() {
   return (
@@ -29,7 +29,14 @@ function Volunteer() {
         <div className="notice-card">
           <h2>Let's Find the Right Fit</h2>
           <p>Tell us how you'd like to help and when you're available.</p>
-          <a href={VOLUNTEER_MAILTO} className="btn btn-primary">Email Us to Volunteer</a>
+          <a
+            href={VOLUNTEER_FORM_URL}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Volunteer Interest Form
+          </a>
         </div>
       </section>
     </>

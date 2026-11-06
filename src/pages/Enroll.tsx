@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import welcome from '../assets/stock/welcome.jpg'
-import { ENROLL_MAILTO, CONTACT_EMAIL } from '../data/content'
+import { ENROLL_FORM_URL, CONTACT_EMAIL, REGISTRATION_FEE_NOTE } from '../data/content'
 
 function Enroll() {
   return (
@@ -25,11 +25,19 @@ function Enroll() {
         <div className="notice-card">
           <h2>Ready to Enroll?</h2>
           <p>
-            Email us and we'll take it from there. Online enrollment forms are coming soon.
+            Complete our Youth Registration / Parent Consent form to get started.
           </p>
-          <a href={ENROLL_MAILTO} className="btn btn-primary">Email Us to Enroll</a>
+          <a
+            href={ENROLL_FORM_URL}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start Registration
+          </a>
+          <p className="section-note">{REGISTRATION_FEE_NOTE}</p>
           <p className="section-note">
-            Or write to us directly at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+            Questions first? Write to us at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
           </p>
         </div>
 

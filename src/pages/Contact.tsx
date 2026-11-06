@@ -1,6 +1,7 @@
 import PageHero from '../components/PageHero'
+import Icon from '../components/Icon'
 import contactHero from '../assets/stock/contact-hero.jpg'
-import { CONTACT_EMAIL, SOCIAL_HANDLE } from '../data/content'
+import { CONTACT_EMAIL, SOCIAL_HANDLE, FACEBOOK_URL, INSTAGRAM_URL } from '../data/content'
 
 function Contact() {
   return (
@@ -25,6 +26,26 @@ function Contact() {
           <div className="contact-item">
             <h3>Follow Us</h3>
             <p>Facebook &amp; Instagram: {SOCIAL_HANDLE}</p>
+            <div className="social-links">
+              <a
+                href={FACEBOOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Legacy All-Stars on Facebook"
+                className="social-link"
+              >
+                <Icon name="facebook" className="social-icon" />
+              </a>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Legacy All-Stars on Instagram"
+                className="social-link"
+              >
+                <Icon name="instagram" className="social-icon" />
+              </a>
+            </div>
           </div>
 
           <div className="contact-item">

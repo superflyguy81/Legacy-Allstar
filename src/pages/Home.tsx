@@ -3,6 +3,7 @@ import Icon from '../components/Icon'
 import homeHero from '../assets/stock/home-hero.jpg'
 import welcome from '../assets/stock/welcome.jpg'
 import {
+  CONTACT_EMAIL,
   pillars,
   experienceSteps,
   activities,
@@ -106,11 +107,22 @@ function Home() {
           <span className="eyebrow">Activities &amp; Experiences</span>
           <h2>More Than Mentoring.</h2>
         </div>
-        <ul className="activity-grid">
+        <ul className="activity-grid activity-grid-six">
           {activities.map((activity) => (
             <li className="activity" key={activity}>{activity}</li>
           ))}
         </ul>
+        <div className="student-gains">
+          <h2>What Students Gain</h2>
+          <ul className="activity-grid activity-grid-six">
+            <li className="activity">Connect with Positive Role Models</li>
+            <li className="activity">Create Meaningful Friendships</li>
+            <li className="activity">Self-Confidence &amp; Resilience</li>
+            <li className="activity">Personal Accountability</li>
+            <li className="activity">Serve Their Community</li>
+            <li className="activity">Gain Life Skills for Success</li>
+          </ul>
+        </div>
       </section>
 
       <section className="section section-narrow safety">
@@ -150,22 +162,52 @@ function Home() {
           ))}
         </div>
         <p className="section-note impact-note">
-          We're tracking our impact from day one and will share our numbers here as the
-          program grows.
+          We're tracking our impact from day one and will continue updating these numbers as
+          the program grows.
         </p>
       </section>
 
       <section className="section alt-bg stories">
         <div className="section-header">
+          <span className="eyebrow">From Our Community</span>
           <h2>Legacy Stories</h2>
         </div>
-        <div className="story-placeholder">
-          <p>
-            As our inaugural year unfolds, this is where you'll hear from students, parents,
-            mentors, and community partners about what Legacy means to them.
-          </p>
+        <div className="story-group">
+          <h3>Parent Feedback</h3>
+          <div className="story-grid story-grid-parent">
+            <blockquote className="story-card">
+              <p>“My son did not want to leave the session and mentioned how much fun it was.”</p>
+              <cite>Legacy Parent</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div className="story-group">
+          <h3>Youth Feedback</h3>
+          <div className="story-grid">
+            <blockquote className="story-card">
+              <p>“I loved connecting with my mentor.”</p>
+              <cite>Legacy registered student</cite>
+            </blockquote>
+            <blockquote className="story-card">
+              <p>
+                “During the session on communications, I liked talking about how you should
+                talk to people and the impact your tone and body language has when delivering
+                a message.”
+              </p>
+              <cite>Legacy registered student</cite>
+            </blockquote>
+            <blockquote className="story-card">
+              <p>“I liked the energy that the mentors brought!”</p>
+              <cite>Legacy registered student</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div className="story-cta-wrap">
           <p className="story-cta">
-            Have a Legacy story to share? <Link to="/contact">We'd love to hear it.</Link>
+            Have a Legacy story to share?{' '}
+            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Share a Legacy story')}`}>
+              We’d love to hear it.
+            </a>
           </p>
         </div>
       </section>

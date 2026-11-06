@@ -17,7 +17,7 @@ function Footer() {
           <nav className="footer-nav">
             <span className="footer-heading">Organization</span>
             <Link to="/about">About</Link>
-            <Link to="/programs">Programs</Link>
+            <Link to="/programs">The Legacy Experience</Link>
             <Link to="/donate">Donate</Link>
             <Link to="/contact">Contact</Link>
           </nav>

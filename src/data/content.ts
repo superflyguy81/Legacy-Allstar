@@ -1,10 +1,10 @@
 import channel from '../assets/board/channel.jpg'
-import mkaneghay from '../assets/board/mkaneghay.jpg'
+import mkaneghay from '../assets/board/mkaneghay.jpeg'
 import kim from '../assets/board/kim.jpg'
 import farrah from '../assets/board/farrah.jpg'
 import roy from '../assets/board/roy.jpg'
 import lashawn from '../assets/board/lashawn.jpg'
-import antoine from '../assets/board/antoine.jpg'
+import antoine from '../assets/board/antoine.png'
 import george from '../assets/board/george.jpg'
 
 export const CONTACT_EMAIL = 'legacyallstarsorg@gmail.com'
@@ -74,16 +74,12 @@ export const experienceSteps: Step[] = [
 ]
 
 export const activities: string[] = [
-  'College Tours',
-  'Career Exploration',
-  'Financial Literacy',
-  'Leadership Workshops',
-  'Community Service',
-  'Entrepreneurship',
-  'Technology & AI',
-  'Sports & Recreation',
-  'Life Skills',
-  'Cultural Experiences',
+  'Leadership Development',
+  'Personal Growth & Goal Setting',
+  'Financial Literacy & Money Management',
+  'Real-World Life Skills',
+  'Community Service Opportunities',
+  'College & Career Exploration',
 ]
 
 export interface SafetyItem {
@@ -104,10 +100,9 @@ export interface ImpactStat {
 }
 
 export const impactStats: ImpactStat[] = [
-  { label: 'Youth enrolled', value: null },
-  { label: 'Mentors recruited', value: null },
-  { label: 'Community partners', value: null },
-  { label: 'Programs & experiences', value: null },
+  { label: 'Youth enrolled', value: '21' },
+  { label: 'Mentors recruited', value: '8' },
+  { label: 'Community partners', value: 'TBA' },
 ]
 
 export interface WayToHelp {

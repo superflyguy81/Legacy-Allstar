@@ -12,7 +12,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { to: '/', label: 'Home', end: true },
   { to: '/about', label: 'About' },
-  { to: '/programs', label: 'Programs' },
+  { to: '/programs', label: 'The Legacy Experience' },
   {
     to: '/families',
     label: 'For Families',
